@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="Calculadora de Unidades de longitud" />
+	<meta http-equiv="Content-Language" content="es" />
+	<title>Unidades de longitud</title>
+	<link rel="shortcut icon" type="image/jpg" href="calculator-icon.png" />
+	<link rel="stylesheet" href="estilos.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom-theme/jquery-ui-1.8.19.custom.css" type="text/css" />
+	<script language="JavaScript" src="jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script language="JavaScript" src="jquery-ui-1.8.19.custom.min.js" type="text/javascript"></script>
+	<script language="JavaScript" src="aecalc2.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="borrar();">
+	<form name="Longitud" id="formulario" action="" onSubmit="return false;">
+		<div class="container">
+			<img src="./logo.png">
+			<table>
+				<tr>
+					<td>Convertir</td>
+					<td>
+						<input type="text" id="cantidad" name="cantidad" size="10" class="newr ochenta" />
+					</td>
+					<td>
+						<select name="uni1" size="1" class="newr" id="uni1">
+							<option value="kms">kil&oacute;metros</option>
+							<option value="hms">hect&oacute;metros</option>
+							<option value="decams">dec&aacute;metros</option>
+							<option selected="selected" value="metros">metros</option>
+							<option value="dms">dec&iacute;metros</option>
+							<option value="cms">cent&iacute;metros</option>
+							<option value="mms">mil&iacute;metros</option>
+							<option value="micms">micr&oacute;metros (micras)</option>
+							<option value="nanoms">nan&oacute;metros</option>
+							<option value="millt">millas terrestres</option>
+							<option value="millm">millas marinas</option>
+							<option value="pies">pies</option>
+							<option value="pulg">pulgadas</option>
+							<option value="yarda">yardas</option>
+							<option value="leg">leguas</option>
+							<option value="legpost">leguas de posta</option>
+							<option value="legm">leguas marinas</option>
+							<option value="vara">varas</option>
+							<option value="braza">brazas</option>
+							<option value="brazaing">brazas (inglesas)</option>
+						</select>
+					</td>
+					<td>a</td>
+					<td>
+						<select name="uni2" size="1" class="newr" id="uni2">
+							<option value="kms">kil&oacute;metros</option>
+							<option value="hms">hect&oacute;metros</option>
+							<option value="decams">dec&aacute;metros</option>
+							<option selected="selected" value="metros">metros</option>
+							<option value="dms">dec&iacute;metros</option>
+							<option value="cms">cent&iacute;metros</option>
+							<option value="mms">mil&iacute;metros</option>
+							<option value="micms">micr&oacute;metros (micras)</option>
+							<option value="nanoms">nan&oacute;metros</option>
+							<option value="millt">millas terrestres</option>
+							<option value="millm">millas marinas</option>
+							<option value="pies">pies</option>
+							<option value="pulg">pulgadas</option>
+							<option value="yarda">yardas</option>
+							<option value="leg">leguas</option>
+							<option value="legpost">leguas de posta</option>
+							<option value="legm">leguas marinas</option>
+							<option value="vara">varas</option>
+							<option value="braza">brazas</option>
+							<option value="brazaing">brazas (inglesas)</option>
+						</select>
+					</td>
+					<td>
+						<button onClick="calcular(); return false;" class="boton"><span
+								class="etiqueta">Calcular</span></button>
+					</td>
+				</tr>
+			</table>
+			<div class="resultado pegar">
+				<div class="divres"><b>Resultado:</b> <input type="text" name="resultado" size="10"
+						class="newr cientoveinte" readonly="readonly" /> <span id="resultado1"></span>
+				</div>
+			</div>
+			<button onClick="borrar(); return false;" class="boton"><span class="etiqueta">Limpiar</span></button>
+			<p style="padding: 0 0 0 1rem;">Aigner Alfonso Urue&ntilde;a Cale&ntilde;o</p>
+			<br>
+			<small>
+				<p style="text-align:center">orem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit porttitor erat non tincidunt.
+					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis
+					dignissim tempus dapibus. Vestibulum at metus aliquam, eleifend velit id, fermentum justo. Sed massa
+					leo, iaculis vitae justo luctus, pulvinar ultricies sem. Vivamus mi nulla, consequat eu sapien et,
+					auctor fringilla nunc. Fusce nibh urna, euismod eu fringilla nec, volutpat at lorem. Vivamus
+					imperdiet erat interdum eros auctor dictum. Aliquam vitae malesuada metus. Pellentesque facilisis
+					fringilla erat, ac pulvinar nunc dapibus ut. Maecenas sed leo vitae dui rutrum consectetur. Nunc
+					iaculis bibendum risus sed placerat. Vestibulum tempor libero a diam consectetur, ullamcorper
+					dapibus neque elementum. Vivamus in augue sit amet mi finibus commodo vitae id sem. Curabitur et
+					diam eros. Aliquam venenatis non neque in molestie.</p>
+			</small>
+		</div>
+	</form>
+</body>
+
+</html>
